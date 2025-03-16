@@ -1,20 +1,29 @@
 package pe.edu.idat.demo_chat_websocket.Model;
 
 public class Notificaciones {
-    private  String mensaje;
+    private String contenido;
+    private String emisor;
 
-    public Notificaciones() {
+    public Notificaciones() {}
 
-    }
-    public Notificaciones(String mensaje) {
-        this.mensaje = mensaje;
-    }
-
-    public String getMensaje() {
-        return mensaje;
+    public Notificaciones(String contenido, String emisor) {
+        this.contenido = contenido;
+        this.emisor = emisor;
     }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public String getContenido() {
+        return contenido;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+
+    public String getEmisor() {
+        return emisor;
+    }
+
+    public void setEmisor(String emisor) {
+        this.emisor = emisor;
     }
 }
